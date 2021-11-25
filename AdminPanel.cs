@@ -31,7 +31,9 @@ namespace CyberClub
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Bronirovanie bron = new Bronirovanie();
+            bron.Show();
         }
     }
 }

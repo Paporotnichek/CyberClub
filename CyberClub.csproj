@@ -71,6 +71,12 @@
     <Compile Include="AdminPanel.Designer.cs">
       <DependentUpon>AdminPanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Bronirovanie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bronirovanie.Designer.cs">
+      <DependentUpon>Bronirovanie.cs</DependentUpon>
+    </Compile>
     <Compile Include="CreateTournirs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +109,9 @@
     <Compile Include="Zal.cs" />
     <EmbeddedResource Include="AdminPanel.resx">
       <DependentUpon>AdminPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bronirovanie.resx">
+      <DependentUpon>Bronirovanie.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CreateTournirs.resx">
       <DependentUpon>CreateTournirs.cs</DependentUpon>

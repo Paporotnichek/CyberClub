@@ -55,9 +55,9 @@ namespace CyberClub
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(64, 261);
+            this.button2.Location = new System.Drawing.Point(55, 262);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(95, 46);
+            this.button2.Size = new System.Drawing.Size(156, 46);
             this.button2.TabIndex = 2;
             this.button2.Text = "Человек занял компьютер";
             this.button2.UseVisualStyleBackColor = true;
