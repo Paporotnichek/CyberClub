@@ -49,11 +49,12 @@ namespace CyberClub
         private void button1_Click(object sender, EventArgs e)
         {
             DB db = new DB();
-            MySqlCommand command = new MySqlCommand(" INSERT INTO `zal` ( `computer`, `busy`, `start game`, `continue game`) VALUES(@computer, @busy, @start game, @continue game)", db.getConnection());
+            MySqlCommand command = new MySqlCommand(" INSERT INTO `zal` ( `computer`, `busy`, `start`, `finish`, `DateSeans`) VALUES(@computer, @busy, @start, @finish, @DateSeans)", db.getConnection());
             command.Parameters.AddWithValue("@computer", computer.SelectedValue.ToString());
             command.Parameters.Add("@busy", MySqlDbType.VarChar).Value = busy.SelectedItem;
-            command.Parameters.Add("@start game", MySqlDbType.VarChar).Value = start.???;
-            command.Parameters.Add("@continue game", MySqlDbType.VarChar).Value = finish.;
+            command.Parameters.Add("@start", MySqlDbType.VarChar).Value = start.Text;
+            command.Parameters.Add("@finish", MySqlDbType.VarChar).Value = finish.Text;
+            command.Parameters.Add("@DateSeans", MySqlDbType.Date).Value = DateSeans.Value.Date;
 
             db.OpenConnect();
             if (command.ExecuteNonQuery() == 1)
