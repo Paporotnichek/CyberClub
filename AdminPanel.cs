@@ -28,5 +28,10 @@ namespace CyberClub
             CreateTournirs cTournirs = new CreateTournirs();
             cTournirs.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
