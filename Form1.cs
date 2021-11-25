@@ -40,23 +40,44 @@ namespace CyberClub
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string LoginUser =  login.Text;
-            string PasswordUser = password.Text;
-            DB db = new DB();
-            DataTable table = new DataTable();
-            MySqlDataAdapter adapter = new MySqlDataAdapter();
-            MySqlCommand command = new MySqlCommand("SELECT * FROM `users` WHERE `Login`=@uL AND `Password`=@uP", db.getConnection());
-            command.Parameters.Add("@uL", MySqlDbType.VarChar).Value = LoginUser;
-            command.Parameters.Add("@uP", MySqlDbType.VarChar).Value = PasswordUser;
-            adapter.SelectCommand = command;
-            adapter.Fill(table);
-            if (table.Rows.Count > 0)
-                MessageBox.Show("Yes");
+            if (password.Text == "" || login.Text == "")
+            {
+                MessageBox.Show("Заполните поля!");
+            }
             else
             {
-                MessageBox.Show("Не удалось войти", "Error", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+                string LoginUser = login.Text;
+                string PasswordUser = password.Text;
+                DB db = new DB();
+                DataTable table = new DataTable();
+                MySqlDataAdapter adapter = new MySqlDataAdapter();
+                MySqlCommand command = new MySqlCommand("SELECT * FROM `users` WHERE `Login`=@uL AND `Password`=@uP", db.getConnection());
+                command.Parameters.Add("@uL", MySqlDbType.VarChar).Value = LoginUser;
+                command.Parameters.Add("@uP", MySqlDbType.VarChar).Value = PasswordUser;
+                adapter.SelectCommand = command;
+                adapter.Fill(table);
+                if (table.Rows.Count <= 0)
+                {
+                    MessageBox.Show("Не удалось войти", "Error", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+                    return;
+                }
 
+                if (login.Text == "Admin")
+                    {
+                        this.Hide();
+                        AdminPanel apanel = new AdminPanel();
+                        apanel.Show();
+                    }
+                   else
+                {
+                    this.Hide();
+                    User Users = new User();
+                    Users.Show();
+                }
+                
             }
+           
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -65,5 +86,7 @@ namespace CyberClub
             Form2 register = new Form2();
             register.Show();
         }
+
     }
 }
+

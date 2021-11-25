@@ -29,23 +29,23 @@ namespace CyberClub
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.vhod = new System.Windows.Forms.Button();
             this.login = new System.Windows.Forms.TextBox();
             this.password = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.register = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // vhod
             // 
-            this.button1.Location = new System.Drawing.Point(90, 329);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(116, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Вход";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.vhod.Location = new System.Drawing.Point(90, 329);
+            this.vhod.Name = "vhod";
+            this.vhod.Size = new System.Drawing.Size(116, 23);
+            this.vhod.TabIndex = 0;
+            this.vhod.Text = "Вход";
+            this.vhod.UseVisualStyleBackColor = true;
+            this.vhod.Click += new System.EventHandler(this.button1_Click);
             // 
             // login
             // 
@@ -82,29 +82,29 @@ namespace CyberClub
             this.label2.TabIndex = 5;
             this.label2.Text = "Пароль";
             // 
-            // button2
+            // register
             // 
-            this.button2.Location = new System.Drawing.Point(90, 283);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(116, 23);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Регистрация";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.register.Location = new System.Drawing.Point(90, 283);
+            this.register.Name = "register";
+            this.register.Size = new System.Drawing.Size(116, 23);
+            this.register.TabIndex = 6;
+            this.register.Text = "Регистрация";
+            this.register.UseVisualStyleBackColor = true;
+            this.register.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(299, 398);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.register);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.password);
             this.Controls.Add(this.login);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.vhod);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Вход";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -113,12 +113,12 @@ namespace CyberClub
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button vhod;
         private System.Windows.Forms.TextBox login;
         private System.Windows.Forms.TextBox password;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button register;
     }
 }
 

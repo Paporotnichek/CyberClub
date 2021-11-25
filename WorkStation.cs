@@ -8,6 +8,6 @@ namespace CyberClub
 {
     public class WorkStation
     {
-        public string numberWorkstation;
+        public string numberWorkstation { get; set; }
     }
 }

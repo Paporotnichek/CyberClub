@@ -8,8 +8,8 @@ namespace CyberClub
 {
     public class Zal
     {
-        public string computer;
-        public bool busy;
-        public int timeGame;
+        public string computer { get; set; }
+        public bool busy { get; set; }
+        public int timeGame { get; set; }
     }
 }

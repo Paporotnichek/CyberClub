@@ -35,21 +35,30 @@ namespace CyberClub
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (checkUser())
-                return;
-            DB db = new DB();
-            MySqlCommand command = new MySqlCommand(" INSERT INTO `users` ( `Login`, `Password`, `Name`, `Surname`,`Email`) VALUES(@login,@pass,@name,@surname,@email)", db.getConnection());
-            command.Parameters.Add("@name", MySqlDbType.VarChar).Value = name.Text;
-            command.Parameters.Add("@pass", MySqlDbType.VarChar).Value = password.Text;
-            command.Parameters.Add("@login", MySqlDbType.VarChar).Value = login.Text;
-            command.Parameters.Add("@surname", MySqlDbType.VarChar).Value = surname.Text;
-            command.Parameters.Add("@email", MySqlDbType.VarChar).Value = email.Text;
-            db.OpenConnect();
-            if (command.ExecuteNonQuery() == 1)
-                MessageBox.Show("Аккаунт был создан");
+            if (name.Text == "" || password.Text == "" || email.Text == "" || login.Text == "" || surname.Text == "")
+            {
+                MessageBox.Show("Заполните поля!");
+            }
             else
-                MessageBox.Show("Аккаунт не был создан");
-            db.CloseConnect();
+            {
+                if (checkUser())
+                    return;
+
+                DB db = new DB();
+                MySqlCommand command = new MySqlCommand(" INSERT INTO `users` ( `Login`, `Password`, `Name`, `Surname`,`Email`) VALUES(@login,@pass,@name,@surname,@email)", db.getConnection());
+                command.Parameters.Add("@name", MySqlDbType.VarChar).Value = name.Text;
+                command.Parameters.Add("@pass", MySqlDbType.VarChar).Value = password.Text;
+                command.Parameters.Add("@login", MySqlDbType.VarChar).Value = login.Text;
+                command.Parameters.Add("@surname", MySqlDbType.VarChar).Value = surname.Text;
+                command.Parameters.Add("@email", MySqlDbType.VarChar).Value = email.Text;
+                db.OpenConnect();
+                if (command.ExecuteNonQuery() == 1)
+                    MessageBox.Show("Аккаунт был создан");
+                else
+                    MessageBox.Show("Аккаунт не был создан");
+                db.CloseConnect();
+            }
+             
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -75,10 +84,18 @@ namespace CyberClub
             }
             else
             {
-                MessageBox.Show("Вы зарегистрированы");
+
+                this.Hide();
+                Form1 vhod = new Form1();
+                vhod.Show();
                 return false;
 
             }
+        }
+
+        private void name_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

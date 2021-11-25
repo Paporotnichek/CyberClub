@@ -8,10 +8,10 @@ namespace CyberClub
 {
     public class events
     {
-        public string categories;
-        public string disciplins;
-        public string typeCompetition; // Тип турнира
-        public string prizeMoney;
+        public string categories { get; set; }
+        public string disciplins { get; set; }
+        public string typeCompetition { get; set; } // Тип турнира
+        public string prizeMoney { get; set; }
 
 
 
