@@ -84,7 +84,6 @@
       <DependentUpon>CreateTournirs.cs</DependentUpon>
     </Compile>
     <Compile Include="DB.cs" />
-    <Compile Include="events.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,8 +104,6 @@
     <Compile Include="User.Designer.cs">
       <DependentUpon>User.cs</DependentUpon>
     </Compile>
-    <Compile Include="WorkStation.cs" />
-    <Compile Include="Zal.cs" />
     <EmbeddedResource Include="AdminPanel.resx">
       <DependentUpon>AdminPanel.cs</DependentUpon>
     </EmbeddedResource>
