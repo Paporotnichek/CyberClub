@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace CyberClub
 {
-    public partial class Form2 : Form
+    public partial class Registration : Form
     {
-        public Form2()
+        public Registration()
         {
             InitializeComponent();
         }
@@ -64,7 +64,7 @@ namespace CyberClub
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form1 vhod = new Form1();
+            Autorization vhod = new Autorization();
             vhod.Show();
         }
         public Boolean checkUser() 
@@ -86,7 +86,7 @@ namespace CyberClub
             {
 
                 this.Hide();
-                Form1 vhod = new Form1();
+                Autorization vhod = new Autorization();
                 vhod.Show();
                 return false;
 
@@ -94,6 +94,21 @@ namespace CyberClub
         }
 
         private void name_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void clear_Click(object sender, EventArgs e)
+        {
+            login.Clear();
+            password.Clear();
+            name.Clear();
+            login.Clear();
+            surname.Clear();
+
+        }
+
+        private void Registration_Load(object sender, EventArgs e)
         {
 
         }

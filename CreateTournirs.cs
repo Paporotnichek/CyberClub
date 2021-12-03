@@ -97,7 +97,14 @@ namespace CyberClub
                 db.CloseConnect();
 
             }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AdminPanel vozvrat = new AdminPanel();
+            vozvrat.Show();
         }
+    }
     }
 
 
