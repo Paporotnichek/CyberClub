@@ -248,7 +248,7 @@ namespace CyberClub
             this.Controls.Add(this.surname);
             this.Controls.Add(this.name);
             this.Name = "Registration";
-            this.Text = "Ы";
+            this.Text = "Регистрация";
             this.Load += new System.EventHandler(this.Registration_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);

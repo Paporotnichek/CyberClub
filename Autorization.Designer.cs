@@ -38,12 +38,12 @@ namespace CyberClub
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
@@ -159,49 +159,15 @@ namespace CyberClub
             this.panel1.Size = new System.Drawing.Size(224, 360);
             this.panel1.TabIndex = 11;
             // 
-            // label5
+            // pictureBox3
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Elephant", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label5.Location = new System.Drawing.Point(15, 16);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(176, 17);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Мы находимся по адресу: ";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(34, 179);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(134, 21);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Welcome to the ";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(64, 200);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(73, 21);
-            this.label7.TabIndex = 2;
-            this.label7.Text = "NoLifer";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Elephant", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label8.Location = new System.Drawing.Point(23, 33);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(161, 17);
-            this.label8.TabIndex = 3;
-            this.label8.Text = "ул. Яна Фабрициуса 16";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.pictureBox3.Image = global::CyberClub.Properties.Resources.funny_or_die_logo__1_;
+            this.pictureBox3.Location = new System.Drawing.Point(59, 252);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(78, 82);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 5;
+            this.pictureBox3.TabStop = false;
             // 
             // label9
             // 
@@ -216,15 +182,49 @@ namespace CyberClub
             this.label9.Text = "Мы на карте: нажми на меня";
             this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
-            // pictureBox3
+            // label8
             // 
-            this.pictureBox3.Image = global::CyberClub.Properties.Resources.funny_or_die_logo__1_;
-            this.pictureBox3.Location = new System.Drawing.Point(59, 252);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(78, 82);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 5;
-            this.pictureBox3.TabStop = false;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Elephant", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.GhostWhite;
+            this.label8.Location = new System.Drawing.Point(23, 33);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(161, 17);
+            this.label8.TabIndex = 3;
+            this.label8.Text = "ул. Яна Фабрициуса 16";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(64, 200);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(73, 21);
+            this.label7.TabIndex = 2;
+            this.label7.Text = "NoLifer";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(34, 179);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(134, 21);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "Welcome to the ";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Elephant", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.GhostWhite;
+            this.label5.Location = new System.Drawing.Point(15, 16);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(176, 17);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Мы находимся по адресу: ";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox2
             // 
@@ -264,7 +264,7 @@ namespace CyberClub
             this.Controls.Add(this.login);
             this.Controls.Add(this.vhod);
             this.Name = "Autorization";
-            this.Text = "Вход";
+            this.Text = "Авторизация";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

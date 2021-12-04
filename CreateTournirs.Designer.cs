@@ -139,7 +139,7 @@ namespace CyberClub
             this.Controls.Add(this.label1);
             this.Controls.Add(this.categories);
             this.Name = "CreateTournirs";
-            this.Text = "CreateTournirs";
+            this.Text = "Создание турнира";
             this.Load += new System.EventHandler(this.CreateTournirs_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

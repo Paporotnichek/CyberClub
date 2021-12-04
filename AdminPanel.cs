@@ -35,5 +35,12 @@ namespace CyberClub
             Bronirovanie bron = new Bronirovanie();
             bron.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Simulation simul = new Simulation();
+            simul.Show();
+        }
     }
 }
