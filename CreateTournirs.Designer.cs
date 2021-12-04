@@ -41,10 +41,10 @@ namespace CyberClub
             // 
             // categories
             // 
-            this.categories.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
             this.categories.FormattingEnabled = true;
             this.categories.Location = new System.Drawing.Point(42, 85);
             this.categories.Name = "categories";
+            this.categories.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.categories.Size = new System.Drawing.Size(121, 21);
             this.categories.TabIndex = 0;
             this.categories.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
