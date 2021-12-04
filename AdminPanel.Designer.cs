@@ -101,7 +101,7 @@ namespace CyberClub
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Name = "AdminPanel";
-            this.Text = "AdminPanel";
+            this.Text = "Админ панель";
             this.Load += new System.EventHandler(this.AdminPanel_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
