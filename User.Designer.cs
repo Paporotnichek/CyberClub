@@ -30,8 +30,8 @@ namespace CyberClub
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,6 +45,16 @@ namespace CyberClub
             this.label1.TabIndex = 0;
             this.label1.Text = "Добро пожаловать ";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.SystemColors.Info;
+            this.label2.Location = new System.Drawing.Point(68, 179);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(220, 13);
+            this.label2.TabIndex = 20;
+            this.label2.Text = "Тут должно быть что-то, но я не придумал";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
@@ -55,16 +65,6 @@ namespace CyberClub
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 19;
             this.pictureBox1.TabStop = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.SystemColors.Info;
-            this.label2.Location = new System.Drawing.Point(70, 192);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(220, 13);
-            this.label2.TabIndex = 20;
-            this.label2.Text = "Тут должно быть что-то, но я не придумал";
             // 
             // User
             // 

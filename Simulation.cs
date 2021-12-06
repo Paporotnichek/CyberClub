@@ -26,7 +26,7 @@ namespace CyberClub
         string[] surname = { "Миранчук", "Ильин", "Васильва", "Драгунов", "Мосин" };
         string[] email = { "miran@gmail.com", "pilya@yandex.ru", "margo@gmail.com", "SemenDrag@mail.ru" , "konstya@gmail.com" };
         Random random = new Random();
-        int count = 0; // счётчик для регистрации
+        int count = 0; 
         public void Registration()
         {
             while (Working)
@@ -68,6 +68,11 @@ namespace CyberClub
             this.Hide();
             AdminPanel vozvrat = new AdminPanel();
             vozvrat.Show();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

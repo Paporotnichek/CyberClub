@@ -33,13 +33,16 @@ namespace CyberClub
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.SystemColors.Info;
-            this.label1.Location = new System.Drawing.Point(240, 23);
+            this.label1.Location = new System.Drawing.Point(211, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(112, 13);
             this.label1.TabIndex = 0;
@@ -90,12 +93,41 @@ namespace CyberClub
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // button4
+            // 
+            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
+            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkRed;
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Firebrick;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ForeColor = System.Drawing.SystemColors.Info;
+            this.button4.Location = new System.Drawing.Point(214, 153);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(109, 46);
+            this.button4.TabIndex = 4;
+            this.button4.Text = "Архив событий";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox4.Image = global::CyberClub.Properties.Resources.exit;
+            this.pictureBox4.Location = new System.Drawing.Point(481, 12);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(44, 43);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 13;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            // 
             // AdminPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(537, 211);
+            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -103,6 +135,7 @@ namespace CyberClub
             this.Name = "AdminPanel";
             this.Text = "Админ панель";
             this.Load += new System.EventHandler(this.AdminPanel_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -114,5 +147,7 @@ namespace CyberClub
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }

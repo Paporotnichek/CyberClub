@@ -44,19 +44,19 @@ namespace CyberClub
                 if (checkUser())
                     return;
 
-                DB db = new DB();
-                MySqlCommand command = new MySqlCommand(" INSERT INTO `users` ( `Login`, `Password`, `Name`, `Surname`,`Email`) VALUES(@login,@pass,@name,@surname,@email)", db.getConnection());
+              //  DB db = new DB();
+                MySqlCommand command = new MySqlCommand(" INSERT INTO `users` ( `Login`, `Password`, `Name`, `Surname`,`Email`) VALUES(@login,@pass,@name,@surname,@email)", DB.getConnection());
                 command.Parameters.Add("@name", MySqlDbType.VarChar).Value = name.Text;
                 command.Parameters.Add("@pass", MySqlDbType.VarChar).Value = password.Text;
                 command.Parameters.Add("@login", MySqlDbType.VarChar).Value = login.Text;
                 command.Parameters.Add("@surname", MySqlDbType.VarChar).Value = surname.Text;
                 command.Parameters.Add("@email", MySqlDbType.VarChar).Value = email.Text;
-                db.OpenConnect();
+                DB.OpenConnect();
                 if (command.ExecuteNonQuery() == 1)
                     MessageBox.Show("Аккаунт был создан");
                 else
                     MessageBox.Show("Аккаунт не был создан");
-                db.CloseConnect();
+                DB.CloseConnect();
             }
              
         }
@@ -69,10 +69,10 @@ namespace CyberClub
         }
         public Boolean checkUser() 
         {
-            DB db = new DB();
+          //  DB db = new DB();
             DataTable table = new DataTable();
             MySqlDataAdapter adapter = new MySqlDataAdapter();
-            MySqlCommand command = new MySqlCommand("SELECT * FROM `users` WHERE `Login`=@uL ", db.getConnection());
+            MySqlCommand command = new MySqlCommand("SELECT * FROM `users` WHERE `Login`=@uL ", DB.getConnection());
             command.Parameters.Add("@uL", MySqlDbType.VarChar).Value = login.Text;
 
             adapter.SelectCommand = command;
@@ -111,6 +111,11 @@ namespace CyberClub
         private void Registration_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

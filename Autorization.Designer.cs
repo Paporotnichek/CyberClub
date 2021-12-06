@@ -38,15 +38,17 @@ namespace CyberClub
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -159,16 +161,6 @@ namespace CyberClub
             this.panel1.Size = new System.Drawing.Size(224, 360);
             this.panel1.TabIndex = 11;
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::CyberClub.Properties.Resources.funny_or_die_logo__1_;
-            this.pictureBox3.Location = new System.Drawing.Point(59, 252);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(78, 82);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 5;
-            this.pictureBox3.TabStop = false;
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -226,6 +218,28 @@ namespace CyberClub
             this.label5.Text = "Мы находимся по адресу: ";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox4.Image = global::CyberClub.Properties.Resources.exit;
+            this.pictureBox4.Location = new System.Drawing.Point(417, 9);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(44, 43);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 12;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::CyberClub.Properties.Resources.funny_or_die_logo__1_;
+            this.pictureBox3.Location = new System.Drawing.Point(59, 252);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(78, 82);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 5;
+            this.pictureBox3.TabStop = false;
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::CyberClub.Properties.Resources.key;
@@ -252,6 +266,7 @@ namespace CyberClub
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(682, 357);
+            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox2);
@@ -268,6 +283,7 @@ namespace CyberClub
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -295,6 +311,7 @@ namespace CyberClub
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }
 

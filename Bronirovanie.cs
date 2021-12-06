@@ -48,21 +48,21 @@ namespace CyberClub
 
         private void button1_Click(object sender, EventArgs e)
         {
-            DB db = new DB();
-            MySqlCommand command = new MySqlCommand(" INSERT INTO `zal` ( `computer`, `busy`, `start`, `finish`, `DateSeans`) VALUES(@computer, @busy, @start, @finish, @DateSeans)", db.getConnection());
+           // DB db = new DB();
+            MySqlCommand command = new MySqlCommand(" INSERT INTO `zal` ( `computer`, `busy`, `start`, `finish`, `DateSeans`) VALUES(@computer, @busy, @start, @finish, @DateSeans)", DB.getConnection());
             command.Parameters.AddWithValue("@computer", computer.SelectedValue.ToString());
             command.Parameters.Add("@busy", MySqlDbType.VarChar).Value = busy.SelectedItem;
             command.Parameters.Add("@start", MySqlDbType.VarChar).Value = start.Text;
             command.Parameters.Add("@finish", MySqlDbType.VarChar).Value = finish.Text;
             command.Parameters.Add("@DateSeans", MySqlDbType.Date).Value = DateSeans.Value.Date;
 
-            db.OpenConnect();
+            DB.OpenConnect();
             if (command.ExecuteNonQuery() == 1)
                 MessageBox.Show("Сеанс записан");
             else
                 MessageBox.Show("Сеанс не получилось записать");
 
-            db.CloseConnect();
+            DB.CloseConnect();
 
         }
 
@@ -71,6 +71,11 @@ namespace CyberClub
             this.Hide();
             AdminPanel vozvrat = new AdminPanel();
             vozvrat.Show();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

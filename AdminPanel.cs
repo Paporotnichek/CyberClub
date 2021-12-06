@@ -42,5 +42,17 @@ namespace CyberClub
             Simulation simul = new Simulation();
             simul.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Arhiv arh = new Arhiv();
+            arh.Show();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

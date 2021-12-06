@@ -71,6 +71,12 @@
     <Compile Include="AdminPanel.Designer.cs">
       <DependentUpon>AdminPanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Arhiv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arhiv.Designer.cs">
+      <DependentUpon>Arhiv.cs</DependentUpon>
+    </Compile>
     <Compile Include="Bronirovanie.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +119,9 @@
     </Compile>
     <EmbeddedResource Include="AdminPanel.resx">
       <DependentUpon>AdminPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arhiv.resx">
+      <DependentUpon>Arhiv.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Bronirovanie.resx">
       <DependentUpon>Bronirovanie.cs</DependentUpon>
@@ -169,6 +178,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="images\exit.png" />
     <Content Include="images\funny-or-die-logo %281%29.png" />
     <Content Include="images\funny-or-die-logo.png" />
     <Content Include="images\key.png" />

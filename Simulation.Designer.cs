@@ -34,6 +34,8 @@ namespace CyberClub
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -102,12 +104,25 @@ namespace CyberClub
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox4.Image = global::CyberClub.Properties.Resources.exit;
+            this.pictureBox4.Location = new System.Drawing.Point(408, 12);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(44, 43);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 16;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            // 
             // Simulation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(464, 234);
+            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -116,6 +131,7 @@ namespace CyberClub
             this.Name = "Simulation";
             this.Text = "Симуляция";
             this.Load += new System.EventHandler(this.Simulation_Load_1);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -128,5 +144,6 @@ namespace CyberClub
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }

@@ -48,10 +48,10 @@ namespace CyberClub
             {
                 string LoginUser = login.Text;
                 string PasswordUser = password.Text;
-                DB db = new DB();
+                //DB db = new DB();
                 DataTable table = new DataTable();
                 MySqlDataAdapter adapter = new MySqlDataAdapter();
-                MySqlCommand command = new MySqlCommand("SELECT * FROM `users` WHERE `Login`=@uL AND `Password`=@uP", db.getConnection());
+                MySqlCommand command = new MySqlCommand("SELECT * FROM `users` WHERE `Login`=@uL AND `Password`=@uP", DB.getConnection());
                 command.Parameters.Add("@uL", MySqlDbType.VarChar).Value = LoginUser;
                 command.Parameters.Add("@uP", MySqlDbType.VarChar).Value = PasswordUser;
                 adapter.SelectCommand = command;
@@ -91,6 +91,11 @@ namespace CyberClub
         {
             System.Diagnostics.Process.Start("https://www.google.ru/maps/place/%D0%9A%D0%BE%D0%BB%D0%BB%D0%B5%D0%B4%D0%B6+%D0%9F%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE+%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE+%D1%83%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82%D0%B0/@57.8074291,28.3515594,17z/data=!4m12!1m6!3m5!1s0x0:0x804f3a7f4d7c2593!2z0J_QodCa0J7QktCT0KMsINCf0YHQutC-0LLRgdC60LjQuSDQs9C-0YHRg9C00LDRgNGB0YLQstC10L3QvdGL0Lkg0YPQvdC40LLQtdGA0YHQuNGC0LXRgg!8m2!3d57.814179!4d28.338835!3m4!1s0x46c01924c4eaea27:0x57bc3250c03d80a5!8m2!3d57.8068211!4d28.350902");
 
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
