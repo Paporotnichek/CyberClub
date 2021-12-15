@@ -33,7 +33,6 @@ namespace CyberClub
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
@@ -89,24 +88,8 @@ namespace CyberClub
             this.label2.TabIndex = 3;
             this.label2.Text = "Добро пожаловать в симуляцию";
             // 
-            // button3
-            // 
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkRed;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Firebrick;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.SystemColors.Info;
-            this.button3.Location = new System.Drawing.Point(196, 153);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 24);
-            this.button3.TabIndex = 15;
-            this.button3.Text = "Вернуться";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
             // pictureBox4
             // 
-            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox4.Image = global::CyberClub.Properties.Resources.exit;
             this.pictureBox4.Location = new System.Drawing.Point(408, 12);
             this.pictureBox4.Name = "pictureBox4";
@@ -121,13 +104,13 @@ namespace CyberClub
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(464, 234);
+            this.ClientSize = new System.Drawing.Size(464, 162);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Simulation";
             this.Text = "Симуляция";
             this.Load += new System.EventHandler(this.Simulation_Load_1);
@@ -143,7 +126,6 @@ namespace CyberClub
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.PictureBox pictureBox4;
     }
 }

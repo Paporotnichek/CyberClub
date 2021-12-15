@@ -36,7 +36,6 @@ namespace CyberClub
             this.PrizeMoney = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.button2 = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
@@ -95,7 +94,7 @@ namespace CyberClub
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Firebrick;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.SystemColors.Info;
-            this.button1.Location = new System.Drawing.Point(270, 286);
+            this.button1.Location = new System.Drawing.Point(176, 287);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(104, 43);
             this.button1.TabIndex = 5;
@@ -111,24 +110,8 @@ namespace CyberClub
             this.dateTimePicker1.TabIndex = 6;
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
-            // button2
-            // 
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkRed;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Firebrick;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.SystemColors.Info;
-            this.button2.Location = new System.Drawing.Point(103, 284);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(104, 43);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Вернуться";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // pictureBox4
             // 
-            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox4.Image = global::CyberClub.Properties.Resources.exit;
             this.pictureBox4.Location = new System.Drawing.Point(425, 12);
             this.pictureBox4.Name = "pictureBox4";
@@ -145,7 +128,6 @@ namespace CyberClub
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(481, 355);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.PrizeMoney);
@@ -153,6 +135,7 @@ namespace CyberClub
             this.Controls.Add(this.disciplins);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.categories);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CreateTournirs";
             this.Text = "Создание турнира";
             this.Load += new System.EventHandler(this.CreateTournirs_Load);
@@ -171,7 +154,6 @@ namespace CyberClub
         private System.Windows.Forms.ComboBox PrizeMoney;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox pictureBox4;
     }
 }

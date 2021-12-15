@@ -45,9 +45,7 @@ namespace CyberClub
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.clear = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,14 +59,14 @@ namespace CyberClub
             // 
             // surname
             // 
-            this.surname.Location = new System.Drawing.Point(109, 131);
+            this.surname.Location = new System.Drawing.Point(109, 124);
             this.surname.Name = "surname";
             this.surname.Size = new System.Drawing.Size(100, 20);
             this.surname.TabIndex = 1;
             // 
             // login
             // 
-            this.login.Location = new System.Drawing.Point(109, 182);
+            this.login.Location = new System.Drawing.Point(109, 172);
             this.login.Name = "login";
             this.login.Size = new System.Drawing.Size(100, 20);
             this.login.TabIndex = 2;
@@ -84,7 +82,7 @@ namespace CyberClub
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.SystemColors.Info;
-            this.label1.Location = new System.Drawing.Point(37, 82);
+            this.label1.Location = new System.Drawing.Point(46, 78);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(33, 13);
             this.label1.TabIndex = 5;
@@ -96,7 +94,7 @@ namespace CyberClub
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Black;
             this.label2.ForeColor = System.Drawing.SystemColors.Info;
-            this.label2.Location = new System.Drawing.Point(37, 139);
+            this.label2.Location = new System.Drawing.Point(37, 127);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(60, 13);
             this.label2.TabIndex = 6;
@@ -125,7 +123,7 @@ namespace CyberClub
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.SystemColors.Info;
-            this.label5.Location = new System.Drawing.Point(37, 189);
+            this.label5.Location = new System.Drawing.Point(37, 179);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(42, 13);
             this.label5.TabIndex = 9;
@@ -174,7 +172,7 @@ namespace CyberClub
             // 
             // email
             // 
-            this.email.Location = new System.Drawing.Point(421, 139);
+            this.email.Location = new System.Drawing.Point(421, 120);
             this.email.Name = "email";
             this.email.Size = new System.Drawing.Size(100, 20);
             this.email.TabIndex = 14;
@@ -184,7 +182,7 @@ namespace CyberClub
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Black;
             this.label8.ForeColor = System.Drawing.SystemColors.Info;
-            this.label8.Location = new System.Drawing.Point(356, 138);
+            this.label8.Location = new System.Drawing.Point(356, 124);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(41, 13);
             this.label8.TabIndex = 15;
@@ -215,20 +213,8 @@ namespace CyberClub
             this.clear.UseVisualStyleBackColor = true;
             this.clear.Click += new System.EventHandler(this.clear_Click);
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.White;
-            this.pictureBox3.Image = global::CyberClub.Properties.Resources.funny_or_die_logo__1_;
-            this.pictureBox3.Location = new System.Drawing.Point(12, 9);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(58, 53);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 18;
-            this.pictureBox3.TabStop = false;
-            // 
             // pictureBox4
             // 
-            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox4.Image = global::CyberClub.Properties.Resources.exit;
             this.pictureBox4.Location = new System.Drawing.Point(530, 8);
             this.pictureBox4.Name = "pictureBox4";
@@ -245,7 +231,6 @@ namespace CyberClub
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(586, 333);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.clear);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label8);
@@ -265,7 +250,6 @@ namespace CyberClub
             this.Name = "Registration";
             this.Text = "Регистрация";
             this.Load += new System.EventHandler(this.Registration_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -290,7 +274,6 @@ namespace CyberClub
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button clear;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
     }
 }

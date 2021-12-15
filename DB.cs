@@ -10,7 +10,7 @@ namespace CyberClub
    static class DB
 
     {
-        static MySqlConnection connection = new MySqlConnection("server=localhost;port=3306;user=root;password=root;database=DB");
+      static MySqlConnection connection = new MySqlConnection("server=localhost;port=3306;user=root;password=root;database=DB");
       static  public void OpenConnect()
         {
             if (connection.State == System.Data.ConnectionState.Closed)

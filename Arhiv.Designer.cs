@@ -39,9 +39,9 @@ namespace CyberClub
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(151, 78);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(416, 223);
+            this.dataGridView1.Size = new System.Drawing.Size(434, 223);
             this.dataGridView1.TabIndex = 0;
             // 
             // Vnesty
@@ -52,7 +52,7 @@ namespace CyberClub
             this.Vnesty.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Firebrick;
             this.Vnesty.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Vnesty.ForeColor = System.Drawing.SystemColors.Info;
-            this.Vnesty.Location = new System.Drawing.Point(592, 311);
+            this.Vnesty.Location = new System.Drawing.Point(361, 254);
             this.Vnesty.Name = "Vnesty";
             this.Vnesty.Size = new System.Drawing.Size(117, 45);
             this.Vnesty.TabIndex = 1;
@@ -62,9 +62,8 @@ namespace CyberClub
             // 
             // pictureBox4
             // 
-            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox4.Image = global::CyberClub.Properties.Resources.exit;
-            this.pictureBox4.Location = new System.Drawing.Point(679, 12);
+            this.pictureBox4.Location = new System.Drawing.Point(479, 12);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(44, 43);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -77,10 +76,11 @@ namespace CyberClub
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(735, 387);
+            this.ClientSize = new System.Drawing.Size(545, 340);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.Vnesty);
             this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Arhiv";
             this.Text = "Arhiv";
             this.Load += new System.EventHandler(this.Arhiv_Load);

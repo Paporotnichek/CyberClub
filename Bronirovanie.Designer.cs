@@ -39,7 +39,6 @@ namespace CyberClub
             this.DateSeans = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
@@ -85,7 +84,7 @@ namespace CyberClub
             this.Zapis.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Firebrick;
             this.Zapis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Zapis.ForeColor = System.Drawing.SystemColors.Info;
-            this.Zapis.Location = new System.Drawing.Point(357, 278);
+            this.Zapis.Location = new System.Drawing.Point(276, 274);
             this.Zapis.Name = "Zapis";
             this.Zapis.Size = new System.Drawing.Size(105, 39);
             this.Zapis.TabIndex = 8;
@@ -138,24 +137,8 @@ namespace CyberClub
             this.label4.Text = "Дата окончания сеанса";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button2
-            // 
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkRed;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Firebrick;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.SystemColors.Info;
-            this.button2.Location = new System.Drawing.Point(231, 278);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(105, 39);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "Вернуться";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // pictureBox4
             // 
-            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox4.Image = global::CyberClub.Properties.Resources.exit;
             this.pictureBox4.Location = new System.Drawing.Point(16, 12);
             this.pictureBox4.Name = "pictureBox4";
@@ -172,7 +155,6 @@ namespace CyberClub
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(483, 360);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.DateSeans);
@@ -183,6 +165,7 @@ namespace CyberClub
             this.Controls.Add(this.label1);
             this.Controls.Add(this.computer);
             this.Controls.Add(this.label2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Bronirovanie";
             this.Text = "Занятость зала";
             this.Load += new System.EventHandler(this.Bronirovanie_Load);
@@ -204,7 +187,6 @@ namespace CyberClub
         private System.Windows.Forms.DateTimePicker DateSeans;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox pictureBox4;
     }
 }
