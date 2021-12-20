@@ -43,7 +43,7 @@ namespace CyberClub
             // categories
             // 
             this.categories.FormattingEnabled = true;
-            this.categories.Location = new System.Drawing.Point(42, 85);
+            this.categories.Location = new System.Drawing.Point(70, 85);
             this.categories.Name = "categories";
             this.categories.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.categories.Size = new System.Drawing.Size(121, 21);
@@ -54,7 +54,7 @@ namespace CyberClub
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.SystemColors.Info;
-            this.label1.Location = new System.Drawing.Point(141, 23);
+            this.label1.Location = new System.Drawing.Point(163, 23);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(139, 13);
             this.label1.TabIndex = 1;
@@ -63,7 +63,7 @@ namespace CyberClub
             // disciplins
             // 
             this.disciplins.FormattingEnabled = true;
-            this.disciplins.Location = new System.Drawing.Point(42, 157);
+            this.disciplins.Location = new System.Drawing.Point(70, 157);
             this.disciplins.Name = "disciplins";
             this.disciplins.Size = new System.Drawing.Size(121, 21);
             this.disciplins.TabIndex = 2;
@@ -72,7 +72,7 @@ namespace CyberClub
             // TypeCompetition
             // 
             this.TypeCompetition.FormattingEnabled = true;
-            this.TypeCompetition.Location = new System.Drawing.Point(253, 85);
+            this.TypeCompetition.Location = new System.Drawing.Point(266, 85);
             this.TypeCompetition.Name = "TypeCompetition";
             this.TypeCompetition.Size = new System.Drawing.Size(121, 21);
             this.TypeCompetition.TabIndex = 3;
@@ -81,7 +81,7 @@ namespace CyberClub
             // PrizeMoney
             // 
             this.PrizeMoney.FormattingEnabled = true;
-            this.PrizeMoney.Location = new System.Drawing.Point(253, 157);
+            this.PrizeMoney.Location = new System.Drawing.Point(266, 157);
             this.PrizeMoney.Name = "PrizeMoney";
             this.PrizeMoney.Size = new System.Drawing.Size(121, 21);
             this.PrizeMoney.TabIndex = 4;
@@ -94,7 +94,7 @@ namespace CyberClub
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Firebrick;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.SystemColors.Info;
-            this.button1.Location = new System.Drawing.Point(176, 287);
+            this.button1.Location = new System.Drawing.Point(183, 285);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(104, 43);
             this.button1.TabIndex = 5;
@@ -104,7 +104,7 @@ namespace CyberClub
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(103, 223);
+            this.dateTimePicker1.Location = new System.Drawing.Point(144, 222);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 6;

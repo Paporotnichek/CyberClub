@@ -77,6 +77,7 @@ namespace CyberClub
             this.Controls.Add(this.label1);
             this.Name = "User";
             this.Text = "Личный кабинет";
+            this.Load += new System.EventHandler(this.User_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

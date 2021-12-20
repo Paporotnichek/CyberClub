@@ -51,7 +51,7 @@ namespace CyberClub
                 //DB db = new DB();
                 DataTable table = new DataTable();
                 MySqlDataAdapter adapter = new MySqlDataAdapter();
-                MySqlCommand command = new MySqlCommand("SELECT * FROM `users` WHERE `Login`=@uL AND `Password`=@uP", DB.getConnection());
+                MySqlCommand command = new MySqlCommand("SELECT * FROM `users1` WHERE `Login`=@uL AND `Password`=@uP", DB.getConnection());
                 command.Parameters.Add("@uL", MySqlDbType.VarChar).Value = LoginUser;
                 command.Parameters.Add("@uP", MySqlDbType.VarChar).Value = PasswordUser;
                 adapter.SelectCommand = command;
@@ -71,8 +71,8 @@ namespace CyberClub
                    else
                 {
                     this.Hide();
-                    User Users = new User();
-                    Users.Show();
+                    User Users1 = new User();
+                    Users1.Show();
                 }
                 
             }

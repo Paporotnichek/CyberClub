@@ -83,7 +83,7 @@ namespace CyberClub
         private void button1_Click(object sender, EventArgs e)
         {
               //  DB db = new DB();
-                MySqlCommand command = new MySqlCommand(" INSERT INTO `events` ( `categories`, `disciplins`, `TypeCompetition`, `StartTournirs`,`PrizeMoney`) VALUES(@categories, @disciplins, @TypeCompetition, @startTournirs, @PrizeMoney)", DB.getConnection());
+                MySqlCommand command = new MySqlCommand(" INSERT INTO `events1` ( `categories`, `disciplins`, `TypeCompetition`, `startTournirs`,`PrizeMoney`) VALUES(@categories, @disciplins, @TypeCompetition, @startTournirs, @PrizeMoney)", DB.getConnection());
                 command.Parameters.AddWithValue("@categories", categories.SelectedValue.ToString());
                 command.Parameters.Add("@disciplins", MySqlDbType.VarChar).Value = disciplins.SelectedItem;
                 command.Parameters.Add("@TypeCompetition", MySqlDbType.VarChar).Value = TypeCompetition.SelectedItem;

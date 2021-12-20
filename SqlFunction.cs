@@ -13,7 +13,7 @@ namespace CyberClub
         public bool Registration(string login, string password, string name, string surname, string email)
         {
             bool flag = false;
-            MySqlCommand cmd = new MySqlCommand($"INSERT INTO users (login, password, name, surname,email) VALUES (@login, @password, @name, @surname,@email)", connection);
+            MySqlCommand cmd = new MySqlCommand($"INSERT INTO users1 (login, password, name, surname,email) VALUES (@login, @password, @name, @surname,@email)", connection);
             cmd.Parameters.AddWithValue("@login", login);
             cmd.Parameters.AddWithValue("@password", password);
             cmd.Parameters.AddWithValue("@name", name);
@@ -32,7 +32,7 @@ namespace CyberClub
         public bool Autorization(string login, string password)
         {
             bool flag = false;
-            MySqlCommand cmd = new MySqlCommand($"SELECT login FROM users WHERE login = @login AND password = @password", connection);
+            MySqlCommand cmd = new MySqlCommand($"SELECT login FROM users1 WHERE login = @login AND password = @password", connection);
             cmd.Parameters.AddWithValue("@login", login);
             cmd.Parameters.AddWithValue("@password", password);
             connection.Open();

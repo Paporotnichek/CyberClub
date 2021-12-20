@@ -39,7 +39,7 @@ namespace CyberClub
         {
 
           //  DB db = new DB();
-            MySqlCommand command = new MySqlCommand(" INSERT INTO `events` ( `categories`, `disciplins`, `TypeCompetition`, `StartTournirs`,`PrizeMoney`) VALUES(@categories, @disciplins, @TypeCompetition, @startTournirs, @PrizeMoney)", DB.getConnection());
+            MySqlCommand command = new MySqlCommand(" INSERT INTO `events1` ( `categories`, `disciplins`, `TypeCompetition`, `StartTournirs`,`PrizeMoney`) VALUES(@categories, @disciplins, @TypeCompetition, @startTournirs, @PrizeMoney)", DB.getConnection());
             command.Parameters.Add("@categories", MySqlDbType.VarChar).Value = categories;
             command.Parameters.Add("@disciplins", MySqlDbType.VarChar).Value = disciplins;
             command.Parameters.Add("@TypeCompetition", MySqlDbType.VarChar).Value = TypeCompetition;
@@ -75,7 +75,7 @@ namespace CyberClub
         private void retrieve()
         {
             dataGridView1.Rows.Clear();
-            string sql = "Select * from events";
+            string sql = "Select * from events1";
             cmd = new MySqlCommand(sql, DB.getConnection());
             try
             {
@@ -105,6 +105,11 @@ namespace CyberClub
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

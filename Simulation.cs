@@ -22,9 +22,9 @@ namespace CyberClub
         }
         string[] login = { "ilya12", "kifdh244", "nrh45" };
         string[] password = { "345", "4gh57", "4j582" };
-        string[] name = { "Кирилл", "Павел", "Марго", "Семен", "Константин" };
-        string[] surname = { "Миранчук", "Ильин", "Васильва", "Драгунов", "Мосин" };
-        string[] email = { "miran@gmail.com", "pilya@yandex.ru", "margo@gmail.com", "SemenDrag@mail.ru" , "konstya@gmail.com" };
+        string[] name = { "Кирилл", "Павел", "Жора", "Семен", "Константин" };
+        string[] surname = { "Миранчук", "Ильин", "Гришин", "Драгунов", "Мосин" };
+        string[] email = { "miran@gmail.com", "pilya@yandex.ru", "grish@gmail.com", "SemenDrag@mail.ru" , "konstya@gmail.com" };
         Random random = new Random();
         int count = 0; 
         public void Registration()

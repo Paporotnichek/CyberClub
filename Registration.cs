@@ -45,7 +45,7 @@ namespace CyberClub
                     return;
 
               //  DB db = new DB();
-                MySqlCommand command = new MySqlCommand(" INSERT INTO `users` ( `Login`, `Password`, `Name`, `Surname`,`Email`) VALUES(@login,@pass,@name,@surname,@email)", DB.getConnection());
+                MySqlCommand command = new MySqlCommand(" INSERT INTO `users1` ( `Login`, `Password`, `Name`, `Surname`,`Email`) VALUES(@login,@pass,@name,@surname,@email)", DB.getConnection());
                 command.Parameters.Add("@name", MySqlDbType.VarChar).Value = name.Text;
                 command.Parameters.Add("@pass", MySqlDbType.VarChar).Value = password.Text;
                 command.Parameters.Add("@login", MySqlDbType.VarChar).Value = login.Text;
@@ -72,7 +72,7 @@ namespace CyberClub
           //  DB db = new DB();
             DataTable table = new DataTable();
             MySqlDataAdapter adapter = new MySqlDataAdapter();
-            MySqlCommand command = new MySqlCommand("SELECT * FROM `users` WHERE `Login`=@uL ", DB.getConnection());
+            MySqlCommand command = new MySqlCommand("SELECT * FROM `users1` WHERE `Login`=@uL ", DB.getConnection());
             command.Parameters.Add("@uL", MySqlDbType.VarChar).Value = login.Text;
 
             adapter.SelectCommand = command;

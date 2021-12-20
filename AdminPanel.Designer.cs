@@ -56,7 +56,7 @@ namespace CyberClub
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Firebrick;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.SystemColors.Info;
-            this.button1.Location = new System.Drawing.Point(19, 133);
+            this.button1.Location = new System.Drawing.Point(19, 127);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(109, 46);
             this.button1.TabIndex = 1;
@@ -75,7 +75,7 @@ namespace CyberClub
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(109, 46);
             this.button2.TabIndex = 2;
-            this.button2.Text = "Внести игрока";
+            this.button2.Text = "Внести игрока зала";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -86,7 +86,7 @@ namespace CyberClub
             this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Firebrick;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.ForeColor = System.Drawing.SystemColors.Info;
-            this.button3.Location = new System.Drawing.Point(19, 211);
+            this.button3.Location = new System.Drawing.Point(19, 198);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(109, 46);
             this.button3.TabIndex = 3;
@@ -101,7 +101,7 @@ namespace CyberClub
             this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Firebrick;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.ForeColor = System.Drawing.SystemColors.Info;
-            this.button4.Location = new System.Drawing.Point(19, 280);
+            this.button4.Location = new System.Drawing.Point(19, 263);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(109, 46);
             this.button4.TabIndex = 4;
